@@ -1,11 +1,8 @@
-
 import java.util.*;
-
-public class tUf {
+public class main {
     public static int binarySearch(int[] nums, int target) {
         int n = nums.length; //size of the array.
-        int low = 0, high = n - 1;
-        
+        int low = 0, high = n - 1;       
         // Perform the steps:
         while (low <= high) {
             int mid = (low + high) / 2;
@@ -14,8 +11,7 @@ public class tUf {
             else high = mid - 1;
         }
         return -1;
-    }
-
+    }    
     public static void main(String[] args) {
         int[] a = {3, 4, 6, 7, 9, 12, 16, 17};
         int target = 6;
@@ -27,3 +23,4 @@ public class tUf {
     }
 } 
 
+// the time complesity for binary search O(logn) 
