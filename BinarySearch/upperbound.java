@@ -1,32 +1,32 @@
-// import java.util.Scanner;
-// public class upperbound {    
-//     // approach binary search
-//     public static int checkbound (int arr[],int n,int x) {
-//         int low = 0 , high = n - 1;
-//         int ans = n;
-//         while (low <= high) {
-//             int mid = low + high / 2;
+import java.util.Scanner;
+public class upperbound {    
+    // approach binary search
+    public static int checkbound (int arr[],int n,int x) {
+        int low = 0 , high = n - 1;
+        int ans = n;
+        while (low <= high) {
+            int mid = low + high / 2;
 
-//             if (arr[mid] >= x) {
-//                 ans = mid;
-//                 high = mid - 1;
-//             }
-//             else {
-//                 low = mid + 1;
-//             }
-//         }
-//         return ans;
-//     }
-//     public static void main(String[] args) {
-//         Scanner obj = new Scanner(System.in);
-//         int x = obj.nextInt();     
+            if (arr[mid] >= x) {
+                ans = mid;
+                high = mid - 1;
+            }
+            else {
+                low = mid + 1;
+            }
+        }
+        return ans;
+    }
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int x = obj.nextInt();     
 
-//         int arr[] = {3, 5, 8, 15, 19};
-//         int n = 5;
-//         int index = checkbound(arr,n,x);
-//         System.out.println("The lowest index of the upper bound is " + index);
-//     }
-// }
+        int arr[] = {3, 5, 8, 15, 19};
+        int n = 5;
+        int index = checkbound(arr,n,x);
+        System.out.println("The lowest index of the upper bound is " + index);
+    }
+}
 
 public class upperbound {   
     // approach linear search
