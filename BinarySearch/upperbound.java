@@ -1,3 +1,16 @@
+// Problem Statement:
+// You are given a sorted array of integers in ascending order, and an integer x. Your task is to write a Java program that finds the index of the smallest element in the array that is greater than or equal to x (this is known as the upper bound of x).
+
+// If all elements in the array are less than x, return the length of the array.
+
+// Use binary search to implement the solution efficiently.
+// Input:
+//     An integer x, the value for which the upper bound is to be found.
+// Note: The array is fixed in the code as {3, 5, 8, 15, 19}.
+// Output:
+//     Print the index of the smallest element in the array which is greater than or equal to x, in the format:
+
+
 import java.util.Scanner;
 public class upperbound {    
     // approach binary search
