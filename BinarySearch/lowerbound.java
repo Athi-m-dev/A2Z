@@ -12,7 +12,7 @@
 
 
 import java.util.Scanner;
-public class upperbound {    
+public class lowerbound {    
     // approach binary search
     public static int checkbound (int arr[],int n,int x) {
         int low = 0 , high = n - 1;
@@ -41,7 +41,7 @@ public class upperbound {
     }
 }
 
-public class upperbound {   
+public class lowerbound {   
     // approach linear search
     public static int lowerBound(int []arr, int n, int x) {
         for (int i = 0; i < n; i++) {
